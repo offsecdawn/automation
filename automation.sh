@@ -96,7 +96,7 @@ echo "**************************************************************************
 echo ""
 echo ""
 
-echo "To download the file, please check out this link in your browser: http://206.189.133.67:8000"
+echo "To download the file, please check out this link in your browser: http://167.71.238.253:8000"
 
 
 python -m SimpleHTTPServer 8000

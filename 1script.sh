@@ -13,6 +13,7 @@ echo "Currently waybackurls extract is in progress!!"
 for i in $(cat $1)
 do
 	waybackurls $i >> allfiles.txt
+	gau $i >> allfiles.txt
 done
 echo "Waybackurls extraction is complete!!"
 sort -ru allfiles.txt >> uniq_files.txt

@@ -27,7 +27,7 @@ do
         then
 		echo "========================================================================================================================================" >> grep_output.txt
                 echo $i >> grep_output.txt
- 		curl -k -s $i |tac |tac | js-beautify | grep --color=always -i -E -- 'token|swagger|admin|jenkin|sandbox|wordpress|drupal|csrf|vpn|aws' >> grep_output.txt
+ 		curl -k -s $i |tac |tac | js-beautify | grep --color=always -i -E -- 'token|swagger|admin|jenkin|sandbox|wordpress|drupal|csrf|vpn|aws|key|api' >> grep_output.txt
 		echo "========================================================================================================================================" >> grep_output.txt
         fi
 done
@@ -40,7 +40,7 @@ do
         then
                 echo "========================================================================================================================================" >> grep_output.txt
                 echo $i >> grep_output.txt
-                curl -k -s $i |tac |tac | grep --color=always -i -E -- 'token|swagger|admin|jenkin|sandbox|wordpress|drupal|csrf|vpn|aws' >> grep_output.txt
+                curl -k -s $i |tac |tac | grep --color=always -i -E -- 'token|swagger|admin|jenkin|sandbox|wordpress|drupal|csrf|vpn|aws|key|api' >> grep_output.txt
                 echo "========================================================================================================================================" >> grep_output.txt
         fi
 done
